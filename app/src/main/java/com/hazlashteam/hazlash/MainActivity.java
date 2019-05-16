@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getUserInput() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
+        //builder.setTitle("עדכן הודעה");
 
 
         // Set up the input
