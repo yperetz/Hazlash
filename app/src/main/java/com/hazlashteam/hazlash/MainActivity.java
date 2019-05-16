@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        Button userInput = (Button) findViewById(R.id.getuserinput);
+        ImageButton userInput = (ImageButton) findViewById(R.id.getuserinput);
         userInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
