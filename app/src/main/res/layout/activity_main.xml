@@ -74,4 +74,19 @@
         app:layout_constraintVertical_bias="0.081"
         app:srcCompat="@drawable/logo_cropped" />
 
+    <ImageButton
+        android:id="@+id/mainIcon"
+        android:layout_width="408dp"
+        android:layout_height="405dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00A25353"
+        android:foregroundTint="#00B18585"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageToContacts"
+        app:srcCompat="@drawable/central_button_1_tilted"
+        android:contentDescription="TODO" />
+
 </android.support.constraint.ConstraintLayout>
