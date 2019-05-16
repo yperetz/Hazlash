@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String userInputString = "הכל בסדר";
+    private String userInputString = "הכנס הודעה";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getUserInput() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        //builder.setTitle("עדכן הודעה");
+
 
 
         // Set up the input
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
         input.setInputType(InputType.TYPE_CLASS_TEXT);
         builder.setView(input);
-        input.setHint("הכנס את ההודעה");
+        input.setHint(userInputString);
 
 
         // Set up the buttons
@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 userInputString = input.getText().toString();
-                TextView messageToContacts = (TextView) findViewById(R.id.messageToContacts);
-                messageToContacts.setText(userInputString);
             }
         });
         builder.setNegativeButton("בטל", new DialogInterface.OnClickListener() {
