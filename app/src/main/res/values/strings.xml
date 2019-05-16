@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hazlash</string>
+    <string name="getuservalue">עדכן הודעה</string>
+    <string name="usersMessage">הכל בסדר</string>
 </resources>
