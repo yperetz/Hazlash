@@ -14,7 +14,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:background="#00AFB5"
+        android:background="#FF7700"
         android:text="@string/getuservalue"
         android:textColorHighlight="#00AFB5"
         android:textColorLink="#00AFB5"
@@ -41,16 +41,37 @@
         app:layout_constraintVertical_bias="0.355" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="117dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/openContacts"
+        android:layout_width="111dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="102dp"
         android:adjustViewBounds="true"
         android:backgroundTint="#00A26D6D"
+        android:contentDescription="@string/contactsButton"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/getuserinput"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/contact_icon1" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/contact_icon1_fix" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="224dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="62dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/messageToContacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/openContacts"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/logo_cropped" />
 
 </android.support.constraint.ConstraintLayout>
